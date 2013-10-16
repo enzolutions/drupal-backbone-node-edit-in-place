@@ -1,0 +1,6 @@
+name = Backbone Node Edit in Place
+description = An example Backbone.js app showing how edit inline nodes.
+dependencies[] = backbone
+dependencies[] = backbone_services
+package = Backbone
+core = 7.x
