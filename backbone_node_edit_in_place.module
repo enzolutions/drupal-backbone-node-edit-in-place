@@ -16,7 +16,7 @@ function backbone_node_edit_in_place_help($path, $arg) {
  * Our app needs a place to live, so we create a menu callback for it
  */
 function backbone_node_edit_in_place_menu() {
-  $items['backbone_node_edit_in_place'] = array(
+  $items['backbone-node-edit-in-place'] = array(
     'title' => 'Backbone Node Edit In-Place',
     'description' => 'A basic Backbone Drupal app.',
     'page callback' => 'backbone_node_edit_in_place_admin_page',
