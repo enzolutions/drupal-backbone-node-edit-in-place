@@ -1,7 +1,7 @@
 Drupal Node Edit In Place with Backbone.js
 ============================
 
-![node-edit-in-place list](https://raw.github.com/enzolutions/drupal-backbone-node-edit-in-place/master/img/drupal_backbone_node_edit_in_place.png)]
+[![edit list](https://raw.github.com/enzolutions/drupal-backbone-node-edit-in-place/master/img/drupal_backbone_node_edit_in_place.png)](#features)
 
 This project is a module for Drupal 7 to load a module and Edit In Place using Backbone.js
 
