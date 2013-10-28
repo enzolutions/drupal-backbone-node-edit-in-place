@@ -87,7 +87,7 @@
               attribute: "body",
               language: 'und',
               delta: 0,
-              property: 'safe_value',
+              property: 'value',
               EditType: 'textarea'
           }).render();
         }

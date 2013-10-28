@@ -42,12 +42,12 @@ function backbone_node_edit_in_place_menu() {
 function backbone_node_edit_in_place_admin_page() {
 
   // Load our library
-  $editinplace = libraries_load('backbone-editinplace');
+  $editinplace = libraries_load('drupal-backbone-editinplace');
   // If we can't find our library, notify the user.
   if (!empty($editinplace['error'])) {
-    $message = 'backbone-editinplace library not found, please download the production version
-               (backbone.editinplace.js) from <a href="@download">@download</a> and place
-               it in the sites/all/libraries/backbone-editinplace/ directory then clear cache.';
+    $message = 'drupal-backbone-editinplace library not found, please download the production version
+               (drupal-backbone.editinplace.js) from <a href="@download">@download</a> and place
+               it in the sites/all/libraries/drupal-backbone-editinplace/ directory then clear cache.';
     drupal_set_message(t($message, array('@download' => url($editinplace['download url']))), 'error');
     return '';
   }
@@ -86,13 +86,13 @@ function backbone_node_edit_in_place_theme($existing, $type, $theme, $path) {
  */
 function backbone_node_edit_in_place_libraries_info() {
   // Register the backbone-editinplace library
-  $libraries['backbone-editinplace'] = array(
-    'name' => 'backbone-editinplace',
-    'vendor url' => 'http://fatiherikli.github.io/backbone-editinplace/',
-    'download url' => 'https://raw.github.com/fatiherikli/backbone-editinplace/master/src/backbone.editinplace.js',
+  $libraries['drupal-backbone-editinplace'] = array(
+    'name' => 'drupal-backbone-editinplace',
+    'vendor url' => 'https://github.com/enzolutions/drupal-backbone-editinplace',
+    'download url' => 'https://raw.github.com/enzolutions/drupal-backbone-editinplace/master/drupal_backbone.editinplace.js',
     'version callback' => 'backbone_node_edit_in_place_get_version',
     'files' => array(
-      'js' => array('backbone.editinplace.js'),
+      'js' => array('drupal-backbone.editinplace.js'),
     ),
   );
   return $libraries;
